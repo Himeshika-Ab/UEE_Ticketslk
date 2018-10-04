@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events | Tickets.lk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        input[type=text] {
+            width: 130px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('searchicon.png');
+            background-position: 10px 10px; 
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+        }
+        
+        input[type=text]:focus {
+            width: 100%;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+
+        
+
+        
+    </style>
+</head>
+
+<body>
+
+       <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-20">
+    <div class="container">
+      <a class="navbar-brand" href="landing.html">Tickets.lk</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mobile-nav">
+        
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Home.html">Home</a>
+          </li>
+          <li class="nav-item">
+                        <a class="nav-link" href="Movies.html">Movies</a>
+         </li>
+                      <li class="nav-item">
+                                <a class="nav-link" href="viewEvents.html">Events</a>
+                              </li>
+                              <li class="nav-item">
+                                        <a class="nav-link" href="Seminar1.html">Seminars</a>
+                                      </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Sign-out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+        <br>
+        <br>
+
+        <form>
+            <input type="text" name="search" placeholder="Search..">
+        </form>
+        
+        <br>
+        <br>
+
+        
+         <table>
+
+            <tr>
+                <td>
+                        <div class="dropdown">
+                                Select Artist
+                                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                  -- Select Artist --
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Artist 1</a>
+                                  <a class="dropdown-item" href="#">Artist 2</a>
+                                  <a class="dropdown-item" href="#">Artist 3</a>
+                                </div>
+                        </div>
+
+                </td>
+                <td>
+                        <div class="dropdown">
+                               Sort By
+                                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                  -- sort by --
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Name</a>
+                                  <a class="dropdown-item" href="#">Date</a>
+                                  <a class="dropdown-item" href="#">Venue</a>
+                                </div>
+                     </div>
+            
+                    
+                </td>
+            </tr>
+
+             <tr>
+                 <td>
+                        <div style="float:initial">
+                                <img src="./images/thumbnail2.jpg" height="240" width="400"/>
+                        </div>
+                 </td>
+                 <td>
+                    <div style="float:initial">
+                        <img src="./images/thumbnail23.jpg" height="240" width="400"/>
+                    </div>
+                </td>
+            
+             </tr>
+             <tr>
+                 <td>
+                        SPARK 18 @ Royal College Junior Grounds
+                        <i class="fa fa-info-circle"></i>
+                 </td>
+                 <td>
+                        Rhythm Unleashed @ Ramdia Ranmal Holiday Resort.
+                        <i class="fa fa-info-circle"></i>
+                 </td>
+             </tr>
+             <tr>
+                    <td>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                    Get Tickets
+                            </button>
+                    </td>
+                    <td>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                    Get Tickets
+                            </button>
+                    </td>
+             </tr>
+                 
+             <tr>
+                    <td>
+                            <div style="float:initial">
+                                <img src="./images/thumbnail234.jpg" height="240" width="400"/>
+                            </div>
+                        </td>
+                        <td>
+                                <div style="float:initial">
+                                    <img src="./images/thumbnail2345.jpg" height="240" width="400"/>
+                                </div>
+                            </td>
+             </tr>
+             <tr>
+                    <td>
+                            Ananthaya අනන්තය @ Provincial council Auditorium Kurunegala
+                           <i class="fa fa-info-circle"></i>
+                    </td>
+                    <td>
+                            Geethanjali ගීතාංජලි @ University of Peradeniya Gymnasium
+                            <i class="fa fa-info-circle"></i>
+                    </td>
+                </tr>
+             <tr>
+                    <td>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" >
+                                    Get Tickets
+                            </button>
+                    </td>
+                    <td>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                    Get Tickets
+                            </button>
+                    </td>
+             </tr>
+             <tr>
+                    <td>
+                            <div style="float:initial">
+                                <img src="./images/thumbnail23456.jpg" height="240" width="400"/>
+                            </div>
+                        </td>
+                        <td>
+                                <div style="float:initial">
+                                    <img src="./images/thumbnail234567.jpg" height="240" width="400"/>
+                                </div>
+                            </td>
+             </tr>
+             <tr>
+                    <td>
+                            Golden Cantabile @ St.Joseph's College Auditorium, Maradana
+                           <i class="fa fa-info-circle"></i>
+                    </td>
+                    <td>
+                            Nimnadha නිම්නාද @ Ananda Maithreya School Ground
+                            <i class="fa fa-info-circle"></i>
+                    </td>
+                </tr>
+             <tr>
+                    <td>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                    Get Tickets
+                            </button>
+                    </td>
+                    <td>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                    Get Tickets
+                            </button>
+                    </td>
+             </tr>
+         </table>
+
+         
+
+              
+
+
+
+
+
+
+
+
+
+
+</body>
+

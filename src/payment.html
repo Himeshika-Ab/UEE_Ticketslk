@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Tickets.lk | Payment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script>
+      function connect() {
+        alert("Conecting to Payment Gateway..");
+      }
+    </script>
+  <style>
+    p{
+      color: red;
+    }
+
+    .box1{
+      background-color: white;
+      width: 100%;
+      border: 2px solid #1C2833;
+      padding: 5px;
+      margin: 5px;
+    }
+
+    .button {
+      background-color: whitesmoke;
+      border: none;
+      color: #1C2833;
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+<div style="background: white">
+  <div style="background:#1C2833" >
+    <a href="./Home.html"> <img src="./images/Untitledlogo.png"/> </a>
+    <div style="float:right">
+      <button class="button">View Profile</button>
+      <br>
+      <button class="button">Sign Out</button>
+    </div>
+    <div style="float: right">
+      <img src="images/default-image-png-1.png" height="90" width="90">
+    </div>
+  </div>
+  <br>
+  <div style="padding: 10px">
+    <div class="box1" style="float:left">
+      <div style="float:left">
+        <img src="./images/mission-impossible-fallout-poster.jpg" height="150" width="120"/>
+      </div>
+      <div>
+        <h4> <b> Johnny English Strikes Again </b> </h4><br>
+        <h6> 1 HR 42 MIN </h6><br>
+        <img src="./images/17736.png" height="20" width="20"/> Liberty Cinema
+      </div>
+    </div>
+  </div>
+  <div class="centered" align="center">
+    <div>
+      <br>
+      <h4> Tickets </h4>
+    </div>
+    <hr>
+    <div>
+    <div style="width:200px;float: left">
+      <h6> Adult Tickets(x1)</h6>
+      <!--<h6> Child Tickets(x1)</h6>-->
+      <h6> <b> Seats D1 </b></h6>
+      <h6> <b> Total  </b></h6>
+    </div>
+      <div style="width:200px;float: left">
+      <h6> Rs.800</h6>
+      <!--<h6> Rs.700</h6>-->
+        <h6> <b> Rs.800 </b></h6>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+  </div>
+  <div align="center">
+    <center><h5> SELECT YOUR PAYMENT MODE </h5></center>
+    <img src="./images/mastercard-icon-png-5a3a1f3c0e0982.21605368151375852405755329.jpg" height="40" width="60"/>
+    <img src="./images/visa_512.png" height="40" width="60"/>
+    <img src="./images/90099_service_512x512.png" height="40" width="60"/>
+  </div>
+  <br>
+  <hr>
+  <div align="center" class="w3-container">
+    <form onsubmit="connect()">
+      <button class="w3-button w3-blue"> Continue </button>
+      <button class="w3-button w3-red">Close</button>
+    </form>
+  </div>
+  <br>
+  <p>Your payment is due within 15 minutes for successful reservation</p>
+  <p> Note : All sales are final and there will be NO refunds, Cancellations and / Or Amendments to the confirmed and finalized bookings.</p>
+</div>
+</body>
+</html>
