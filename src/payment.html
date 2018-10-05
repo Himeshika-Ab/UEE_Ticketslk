@@ -9,14 +9,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
       function connect() {
         alert("Conecting to Payment Gateway..");
       }
+
+      var divItems = document.getElementsByClassName("fab fa-cc-visa");
+
+      function selected(item) {
+        this.clear();
+        item.style.color = '#1C2833';
+        document.getElementsByClassName("")
+        // var divCon = document.getElementById("noOfTickets");
+        // divCon.style.visibility = 'visible'
+
+      }
+
     </script>
   <style>
     p{
       color: red;
+    }
+
+    .fa fa-cc-visa:hover,.fa fa-cc-visa:visited,.fa fa-cc-visa:focus{
+        color: #FF1493;
+      background-color: #A93226;
     }
 
     .box1{
@@ -41,10 +59,44 @@
       cursor: pointer;
     }
 
+
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      height: 80px;
+      width: 100%;
+      background-color: #1C2833;
+      color: white;
+      text-align: center;
+    }
+
   </style>
 </head>
 <body>
 <div style="background: white">
+  <div>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-20">
+      <div class="container">
+        <a class="navbar-brand" href="Home.html">Tickets.lk</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mobile-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">View My Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Sign-out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--
   <div style="background:#1C2833" >
     <a href="./Home.html"> <img src="./images/Untitledlogo.png"/> </a>
     <div style="float:right">
@@ -55,7 +107,8 @@
     <div style="float: right">
       <img src="images/default-image-png-1.png" height="90" width="90">
     </div>
-  </div>
+  </div>-->
+  <?php include 'Header.php';?>
   <br>
   <div style="padding: 10px">
     <div class="box1" style="float:left">
@@ -96,9 +149,13 @@
   </div>
   <div align="center">
     <center><h5> SELECT YOUR PAYMENT MODE </h5></center>
+    <!--
     <img src="./images/mastercard-icon-png-5a3a1f3c0e0982.21605368151375852405755329.jpg" height="40" width="60"/>
     <img src="./images/visa_512.png" height="40" width="60"/>
-    <img src="./images/90099_service_512x512.png" height="40" width="60"/>
+    <img src="./images/90099_service_512x512.png" height="40" width="60"/>-->
+    <i class="fa fa-cc-visa" style="font-size:40px" ; onclick=selected(this)></i>
+    <i class="fa fa-cc-paypal" style="font-size:40px" ; onclick=selected(this)></i>
+    <i class="fa fa-cc-mastercard" style="font-size:40px" ; onclick=selected(this)></i>
   </div>
   <br>
   <hr>
@@ -112,5 +169,8 @@
   <p>Your payment is due within 15 minutes for successful reservation</p>
   <p> Note : All sales are final and there will be NO refunds, Cancellations and / Or Amendments to the confirmed and finalized bookings.</p>
 </div>
+<footer class="bg-dark text-white mt-5 p-4 text-center">
+  Copyright &copy; 2018 Tickets.lk
+</footer>
 </body>
 </html>
